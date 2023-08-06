@@ -1,0 +1,452 @@
+INFO 2023-08-06 17:43:09,971 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 17:43:46,479 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 17:43:46,500 basehttp:212 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,504 basehttp:212 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,505 basehttp:212 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,505 basehttp:212 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,506 basehttp:212 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,506 basehttp:212 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,507 basehttp:212 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,508 basehttp:212 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,508 basehttp:212 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,509 basehttp:212 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:43:46,520 basehttp:212 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,771 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 17:56:25,793 basehttp:212 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,794 basehttp:212 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,795 basehttp:212 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,795 basehttp:212 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,796 basehttp:212 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,797 basehttp:212 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,797 basehttp:212 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,798 basehttp:212 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,799 basehttp:212 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,799 basehttp:212 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2023-08-06 17:56:25,803 basehttp:212 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2023-08-06 17:58:36,941 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 17:58:37,251 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 17:58:47,404 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+ERROR 2023-08-06 17:59:02,570 log:241 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+ERROR 2023-08-06 17:59:02,572 basehttp:212 "GET /test/ HTTP/1.1" 500 75456
+INFO 2023-08-06 18:00:23,413 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 18:00:23,720 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-06 18:00:27,998 log:241 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+ERROR 2023-08-06 18:00:27,999 basehttp:212 "GET /test/ HTTP/1.1" 500 75593
+INFO 2023-08-06 18:00:33,525 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:00:43,118 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+ERROR 2023-08-06 18:01:15,623 log:241 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+ERROR 2023-08-06 18:01:15,626 basehttp:212 "GET /test/ HTTP/1.1" 500 75456
+INFO 2023-08-06 18:02:18,999 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 18:02:19,304 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-06 18:02:23,306 log:241 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+ERROR 2023-08-06 18:02:23,307 basehttp:212 "GET /test/ HTTP/1.1" 500 75593
+INFO 2023-08-06 18:02:41,587 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 18:02:41,885 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-06 18:02:44,785 log:241 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+ERROR 2023-08-06 18:02:44,787 basehttp:212 "GET /test/ HTTP/1.1" 500 75593
+INFO 2023-08-06 18:03:04,094 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 18:03:04,671 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 18:03:06,745 basehttp:212 "GET /test/ HTTP/1.1" 200 7
+INFO 2023-08-06 18:03:29,588 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 18:03:29,939 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 18:03:33,538 basehttp:212 "GET /test/ HTTP/1.1" 200 7
+INFO 2023-08-06 18:04:03,977 basehttp:212 "GET /test/ HTTP/1.1" 200 7
+INFO 2023-08-06 18:05:17,054 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 18:05:17,364 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 18:05:24,089 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:05:27,657 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:07:51,724 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:07:51,946 basehttp:212 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2023-08-06 18:07:51,948 basehttp:212 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2023-08-06 18:07:51,950 basehttp:212 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2023-08-06 18:07:51,952 basehttp:212 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2023-08-06 18:07:51,954 basehttp:212 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2023-08-06 18:07:51,956 basehttp:212 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2023-08-06 18:07:51,958 basehttp:212 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2023-08-06 18:07:51,959 basehttp:212 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2023-08-06 18:07:51,960 basehttp:212 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2023-08-06 18:07:51,961 basehttp:212 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2023-08-06 18:07:51,964 basehttp:212 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2023-08-06 18:07:52,060 log:241 Not Found: /favicon.ico
+WARNING 2023-08-06 18:07:52,062 basehttp:212 "GET /favicon.ico HTTP/1.1" 404 2321
+INFO 2023-08-06 18:23:29,219 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:23:29,248 basehttp:212 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,248 basehttp:212 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,249 basehttp:212 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,251 basehttp:212 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,252 basehttp:212 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,252 basehttp:212 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,252 basehttp:212 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,253 basehttp:212 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,254 basehttp:212 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,254 basehttp:212 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:23:29,256 basehttp:212 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2023-08-06 18:24:45,927 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:28:33,249 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 18:28:33,612 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 18:28:58,886 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 18:28:59,184 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 18:30:24,240 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 18:40:28,421 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 18:40:28,727 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 18:40:35,072 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:40:35,095 basehttp:212 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,100 basehttp:212 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,100 basehttp:212 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,101 basehttp:212 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,101 basehttp:212 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,103 basehttp:212 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,103 basehttp:212 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,103 basehttp:212 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,104 basehttp:212 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,104 basehttp:212 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2023-08-06 18:40:35,106 basehttp:212 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2023-08-06 18:46:01,113 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 18:46:01,556 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-06 18:46:11,303 logs:20 请求路径: /test/get 耗时0.8231110572814941秒
+INFO 2023-08-06 18:46:11,304 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:47:03,445 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\middleware\logs.py changed, reloading.
+INFO 2023-08-06 18:47:03,765 autoreload:668 Watching for file changes with StatReloader
+WARNING 2023-08-06 18:47:06,690 logs:20 请求路径: /test/get 耗时0.8211669921875秒
+INFO 2023-08-06 18:47:06,690 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+WARNING 2023-08-06 18:47:12,387 logs:20 请求路径: /test/get 耗时0.8169229030609131秒
+INFO 2023-08-06 18:47:12,388 basehttp:212 "GET /test/get HTTP/1.1" 200 5125
+INFO 2023-08-06 18:47:32,363 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\middleware\logs.py changed, reloading.
+INFO 2023-08-06 18:47:32,843 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 18:52:27,403 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 18:52:27,760 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 19:05:00,232 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 19:05:00,668 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 20:00:26,292 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 20:00:26,964 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 20:01:58,866 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\views.py changed, reloading.
+INFO 2023-08-06 20:01:59,649 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-06 20:02:02,508 exceptions:26 [<home.views.TestView object at 0x00000220512C7CD0>] mysql连接失败
+ERROR 2023-08-06 20:02:02,521 log:241 Insufficient Storage: /test/get
+ERROR 2023-08-06 20:02:02,522 basehttp:212 "GET /test/get HTTP/1.1" 507 5194
+INFO 2023-08-06 20:02:02,560 basehttp:212 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,563 basehttp:212 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,564 basehttp:212 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,564 basehttp:212 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,564 basehttp:212 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,565 basehttp:212 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,567 basehttp:212 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,567 basehttp:212 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,569 basehttp:212 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,569 basehttp:212 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2023-08-06 20:02:02,573 basehttp:212 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2023-08-06 20:09:40,350 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 20:09:40,707 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 20:12:18,486 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\__init__.py changed, reloading.
+INFO 2023-08-06 20:16:35,824 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 20:39:34,084 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 20:39:34,562 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 20:40:44,775 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 20:40:45,110 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 20:41:34,378 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-06 20:41:54,444 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:41:54,487 log:241 Bad Request: /test/get
+WARNING 2023-08-06 20:41:54,488 basehttp:212 "GET /test/get HTTP/1.1" 400 74494
+ERROR 2023-08-06 20:41:55,011 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:41:55,032 log:241 Bad Request: /favicon.ico
+WARNING 2023-08-06 20:41:55,033 basehttp:212 "GET /favicon.ico HTTP/1.1" 400 74386
+ERROR 2023-08-06 20:42:24,563 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:24,577 log:241 Bad Request: /test/get
+WARNING 2023-08-06 20:42:24,578 basehttp:212 "GET /test/get HTTP/1.1" 400 74631
+ERROR 2023-08-06 20:42:24,655 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:24,679 log:241 Bad Request: /favicon.ico
+WARNING 2023-08-06 20:42:24,680 basehttp:212 "GET /favicon.ico HTTP/1.1" 400 74386
+ERROR 2023-08-06 20:42:25,313 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:25,328 log:241 Bad Request: /test/get
+WARNING 2023-08-06 20:42:25,329 basehttp:212 "GET /test/get HTTP/1.1" 400 74631
+ERROR 2023-08-06 20:42:25,417 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:25,440 log:241 Bad Request: /favicon.ico
+WARNING 2023-08-06 20:42:25,441 basehttp:212 "GET /favicon.ico HTTP/1.1" 400 74386
+ERROR 2023-08-06 20:42:25,926 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:25,939 log:241 Bad Request: /test/get
+WARNING 2023-08-06 20:42:25,940 basehttp:212 "GET /test/get HTTP/1.1" 400 74631
+ERROR 2023-08-06 20:42:26,023 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:26,054 log:241 Bad Request: /favicon.ico
+WARNING 2023-08-06 20:42:26,055 basehttp:212 "GET /favicon.ico HTTP/1.1" 400 74386
+ERROR 2023-08-06 20:42:26,115 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:26,153 log:241 Bad Request: /test/get
+WARNING 2023-08-06 20:42:26,154 basehttp:212 "GET /test/get HTTP/1.1" 400 74631
+ERROR 2023-08-06 20:42:26,431 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:26,455 log:241 Bad Request: /favicon.ico
+WARNING 2023-08-06 20:42:26,456 basehttp:212 "GET /favicon.ico HTTP/1.1" 400 74386
+ERROR 2023-08-06 20:42:26,573 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:26,603 log:241 Bad Request: /test/get
+WARNING 2023-08-06 20:42:26,604 basehttp:212 "GET /test/get HTTP/1.1" 400 74631
+ERROR 2023-08-06 20:42:26,794 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:26,815 log:241 Bad Request: /favicon.ico
+WARNING 2023-08-06 20:42:26,816 basehttp:212 "GET /favicon.ico HTTP/1.1" 400 74386
+ERROR 2023-08-06 20:42:27,124 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:27,141 log:241 Bad Request: /test/get
+WARNING 2023-08-06 20:42:27,142 basehttp:212 "GET /test/get HTTP/1.1" 400 74631
+ERROR 2023-08-06 20:42:27,237 exception:124 Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.zcx321.cc:8888'. You may need to add 'api.zcx321.cc' to ALLOWED_HOSTS.
+WARNING 2023-08-06 20:42:27,269 log:241 Bad Request: /favicon.ico
+WARNING 2023-08-06 20:42:27,270 basehttp:212 "GET /favicon.ico HTTP/1.1" 400 74386
+INFO 2023-08-06 20:43:04,972 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 20:43:05,357 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-06 20:43:08,377 exceptions:26 [<home.views.TestView object at 0x000002EB44384730>] mysql连接失败
+ERROR 2023-08-06 20:43:08,398 log:241 Insufficient Storage: /test/get
+ERROR 2023-08-06 20:43:08,399 basehttp:212 "GET /test/get HTTP/1.1" 507 5194
+INFO 2023-08-06 20:43:08,992 basehttp:212 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2023-08-06 20:43:08,998 basehttp:212 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2023-08-06 20:43:09,004 basehttp:212 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2023-08-06 20:43:09,011 basehttp:212 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2023-08-06 20:43:09,015 basehttp:212 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2023-08-06 20:43:09,019 basehttp:212 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2023-08-06 20:43:09,024 basehttp:212 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2023-08-06 20:43:09,029 basehttp:212 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2023-08-06 20:43:09,031 basehttp:212 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2023-08-06 20:43:09,033 basehttp:212 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2023-08-06 20:43:09,054 basehttp:212 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2023-08-06 20:43:09,329 log:241 Not Found: /favicon.ico
+WARNING 2023-08-06 20:43:09,330 basehttp:212 "GET /favicon.ico HTTP/1.1" 404 2325
+INFO 2023-08-06 20:48:10,721 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 20:48:11,073 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:03:09,698 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\urls.py changed, reloading.
+INFO 2023-08-06 21:03:10,209 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:03:28,877 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\urls.py changed, reloading.
+INFO 2023-08-06 21:03:29,300 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:04:11,091 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\urls.py changed, reloading.
+INFO 2023-08-06 21:04:11,438 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:05:31,499 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\urls.py changed, reloading.
+INFO 2023-08-06 21:05:32,326 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:06:13,487 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\home\urls.py changed, reloading.
+INFO 2023-08-06 21:06:14,050 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:10:06,726 basehttp:212 "GET /host/get HTTP/1.1" 200 19
+INFO 2023-08-06 21:21:08,102 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:21:08,440 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:23:21,085 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-06 21:23:21,893 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:24:00,194 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-06 21:24:00,904 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:24:29,269 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-06 21:24:29,572 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:25:51,598 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-06 21:25:52,038 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:31:31,161 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:31:31,686 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:38:11,506 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:38:12,047 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:38:16,092 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:38:22,269 basehttp:212 "GET /host/get HTTP/1.1" 200 7
+INFO 2023-08-06 21:39:35,702 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:39:36,010 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:39:42,426 basehttp:212 "GET /host/get HTTP/1.1" 200 7
+INFO 2023-08-06 21:40:11,343 basehttp:212 "GET /host/get HTTP/1.1" 200 7
+INFO 2023-08-06 21:41:03,383 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-06 21:41:03,693 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:41:08,051 basehttp:212 "GET /host/get HTTP/1.1" 200 7
+INFO 2023-08-06 21:41:34,722 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-06 21:41:35,060 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:41:38,640 basehttp:212 "GET /host/get HTTP/1.1" 200 19
+INFO 2023-08-06 21:42:11,561 basehttp:212 "GET /host/get HTTP/1.1" 200 19
+INFO 2023-08-06 21:43:25,863 basehttp:212 "GET /host/get HTTP/1.1" 200 19
+INFO 2023-08-06 21:44:18,063 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:44:18,450 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:45:38,100 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:45:38,646 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:45:44,417 basehttp:212 "GET /host/get HTTP/1.1" 200 19
+INFO 2023-08-06 21:51:21,659 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\middleware\cars.py changed, reloading.
+INFO 2023-08-06 21:51:22,278 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:51:29,084 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:51:29,661 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:52:30,822 basehttp:212 "GET /host/get HTTP/1.1" 200 19
+INFO 2023-08-06 21:55:03,188 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:55:03,506 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-06 21:55:53,363 basehttp:212 "GET /host/get HTTP/1.1" 200 19
+INFO 2023-08-06 21:57:36,841 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-06 21:57:37,281 autoreload:668 Watching for file changes with StatReloader
