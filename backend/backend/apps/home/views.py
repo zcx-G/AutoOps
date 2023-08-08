@@ -7,7 +7,7 @@ class TestView(APIView):
     def get(self, request):
         from django.db import DatabaseError
         raise DatabaseError("mysql连接失败")
-
+        return Response({"message": "hello"})
 
 
 def get(request):

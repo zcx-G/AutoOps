@@ -10,15 +10,15 @@
         <a-menu-item v-if="menu.children.length===0" :key="menu.id">
 
           <router-link :to="menu.menu_url">
-           <component :is="getIconComponent(menu.icon)" />
-            <span>{{ menu.title }}</span>
+            <desktop-outlined/>
+            <span> {{ menu.title }}</span>
           </router-link>
         </a-menu-item>
 
         <a-sub-menu v-else :key="menu.id">
           <template #title>
             <span>
-              <component :is="getIconComponent(menu.icon)" />
+              <user-outlined/>
               <span>{{ menu.title }}</span>
             </span>
           </template>
@@ -40,20 +40,16 @@
   </a-layout>
 </template>
 <script>
-import {DesktopOutlined, PieChartOutlined,CopyOutlined,CodeOutlined,BellOutlined,SettingOutlined,AimOutlined,AlertOutlined, UserOutlined} from '@ant-design/icons-vue';
+import {DesktopOutlined, FileOutlined, PieChartOutlined, TeamOutlined, UserOutlined} from '@ant-design/icons-vue';
 import {defineComponent, ref} from 'vue';
 
 export default defineComponent({
   components: {
-    DesktopOutlined,
     PieChartOutlined,
-    CopyOutlined,
-    CodeOutlined,
-    BellOutlined,
-    SettingOutlined,
-    AimOutlined,
-    AlertOutlined,
-    UserOutlined
+    DesktopOutlined,
+    UserOutlined,
+    TeamOutlined,
+    FileOutlined,
   },
 
   data() {
@@ -61,35 +57,42 @@ export default defineComponent({
       collapsed: ref(false),
       selectedKeys: ref(['1']),
       menu_list: [
-        {id: 1, icon: 'DesktopOutlined', title: '展示中心', tube: '', 'menu_url': '/main/show_center', children: []
+        {
+          id: 1, icon: 'mail', title: '展示中心', tube: '', 'menu_url': '/main/show_center', children: []
         },
-        {id: 2, icon: 'PieChartOutlined', title: '资产管理', 'menu_url': '/main/host', children: []
+        {
+          id: 2, icon: 'mail', title: '资产管理', 'menu_url': '/main/host', children: []
         },
-        {id: 3, icon: 'CopyOutlined', title: '批量任务', tube: '', menu_url: '/main/workbench', children: [
+        {
+          "id": 3, icon: 'bold', title: '批量任务', tube: '', menu_url: '/main/workbench', children: [
             {id: 10, icon: 'mail', title: '执行任务', 'menu_url': '/main/multi_exec'},
             {id: 11, icon: 'mail', title: '命令管理', 'menu_url': '/main/template_manage'},
           ]
         },
-        {id: 4, icon: 'CodeOutlined', title: '代码发布', tube: '', menu_url: '/main/workbench', children: [
+        {
+          id: 4, icon: 'highlight', title: '代码发布', tube: '', menu_url: '/main/workbench', children: [
             {id: 12, title: '应用管理', menu_url: '/main/release'},
             {id: 13, title: '发布申请', menu_url: '/main/release'}
           ]
         },
-        {id: 5, icon: 'BellOutlined', title: '定时计划', tube: '', menu_url: '/main/workbench', children: []},
-        {id: 6, icon: 'SettingOutlined', title: '配置管理', tube: '', menu_url: '/main/workbench', children: [
+        {id: 5, icon: 'mail', title: '定时计划', tube: '', menu_url: '/main/workbench', children: []},
+        {
+          id: 6, icon: 'mail', title: '配置管理', tube: '', menu_url: '/main/workbench', children: [
             {id: 14, title: '环境管理', 'menu_url': '/main/environment'},
             {id: 15, title: '服务配置', 'menu_url': '/main/workbench'},
             {id: 16, title: '应用配置', 'menu_url': '/main/workbench'}
           ]
         },
-        {id: 7, icon: 'AimOutlined', title: '监控预警', tube: '', 'menu_url': '/main/workbench', children: []},
-        {id: 8, icon: 'AlertOutlined', title: '报警', tube: '', 'menu_url': '/main/workbench', children: [
+        {id: 7, icon: 'mail', title: '监控预警', tube: '', 'menu_url': '/main/workbench', children: []},
+        {
+          id: 8, icon: 'mail', title: '报警', tube: '', 'menu_url': '/main/workbench', children: [
             {id: 17, title: '报警历史', 'menu_url': '/main/workbench'},
             {id: 18, title: '报警联系人', 'menu_url': '/main/workbench'},
             {id: 19, title: '报警联系组', 'menu_url': '/main/workbench'}
           ]
         },
-        {id: 9, icon: 'UserOutlined', title: '用户管理', tube: '', menu_url: '/main/workbench', children: [
+        {
+          id: 9, icon: 'mail', title: '用户管理', tube: '', menu_url: '/main/workbench', children: [
             {id: 20, title: '账户管理', tube: '', menu_url: '/main/workbench'},
             {id: 21, title: '角色管理', tube: '', menu_url: '/main/workbench'},
             {id: 22, title: '系统设置', tube: '', menu_url: '/main/workbench'}
@@ -99,33 +102,6 @@ export default defineComponent({
     };
   },
 
-  methods: {
-    getIconComponent(iconName) {
-      // 根据 iconName 返回相应的图标组件
-      switch (iconName) {
-        case 'DesktopOutlined':
-          return 'DesktopOutlined';
-        case 'PieChartOutlined':
-          return 'PieChartOutlined';
-        case 'CopyOutlined':
-          return 'CopyOutlined';
-        case 'CodeOutlined':
-          return 'CodeOutlined';
-        case 'BellOutlined':
-          return 'BellOutlined';
-        case 'SettingOutlined':
-          return 'SettingOutlined';
-        case 'AimOutlined':
-          return 'AimOutlined';
-        case 'AlertOutlined':
-          return 'AlertOutlined';
-        case 'UserOutlined':
-          return 'UserOutlined';
-        default:
-          return 'span'; // 默认情况下，返回一个 span 元素
-      }
-    },
-  }
 });
 </script>
 <style>
