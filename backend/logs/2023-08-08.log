@@ -1,0 +1,47 @@
+INFO 2023-08-08 15:15:08,522 autoreload:668 Watching for file changes with StatReloader
+WARNING 2023-08-08 15:15:46,741 log:241 Not Found: /
+WARNING 2023-08-08 15:15:46,742 basehttp:212 "GET / HTTP/1.1" 404 2379
+WARNING 2023-08-08 15:15:47,161 log:241 Not Found: /favicon.ico
+WARNING 2023-08-08 15:15:47,162 basehttp:212 "GET /favicon.ico HTTP/1.1" 404 2430
+ERROR 2023-08-08 15:16:10,299 exceptions:26 [<home.views.TestView object at 0x00000237F8527580>] mysql连接失败
+ERROR 2023-08-08 15:16:10,310 log:241 Insufficient Storage: /test/get
+ERROR 2023-08-08 15:16:10,310 basehttp:212 "GET /test/get HTTP/1.1" 507 5194
+INFO 2023-08-08 15:16:10,537 basehttp:212 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2023-08-08 15:16:10,539 basehttp:212 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2023-08-08 15:16:10,539 basehttp:212 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2023-08-08 15:16:10,542 basehttp:212 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2023-08-08 15:16:10,543 basehttp:212 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2023-08-08 15:16:10,544 basehttp:212 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2023-08-08 15:16:10,552 basehttp:212 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2023-08-08 15:16:10,553 basehttp:212 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2023-08-08 15:16:10,554 basehttp:212 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2023-08-08 15:16:10,554 basehttp:212 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2023-08-08 15:16:10,555 basehttp:212 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2023-08-08 15:39:06,994 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 15:39:07,466 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 15:54:56,149 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 15:54:56,476 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 15:57:20,323 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 15:57:20,682 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 15:58:28,953 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\urls.py changed, reloading.
+INFO 2023-08-08 15:58:29,346 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 17:48:24,895 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 17:48:25,335 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 17:57:28,973 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 17:57:29,254 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 17:57:51,118 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 17:57:51,407 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 17:58:05,027 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 17:58:05,347 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 17:58:16,909 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 17:58:17,245 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 17:59:08,912 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 17:59:09,289 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 18:35:36,606 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 18:35:37,237 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 20:12:36,191 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 20:12:39,282 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 20:14:34,591 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 20:14:35,090 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-08 21:12:18,229 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-08 21:12:19,103 autoreload:668 Watching for file changes with StatReloader
