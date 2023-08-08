@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import sys
 import datetime
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,6 +32,8 @@ sys.path.insert(0, str(BASE_DIR / 'apps'))
 # Application definition
 
 INSTALLED_APPS = [
+    # 'django_simpleui-2023.3.1.dist-info',
+    'simpleui',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,7 +43,9 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'corsheaders',
-    "home"
+    "home",
+    "host",
+    "users"
 ]
 
 MIDDLEWARE = [
@@ -53,7 +58,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'backend.middleware.logs.LogMiddleware',
-
 
 ]
 
@@ -109,14 +113,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'users.User'
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 
@@ -192,8 +200,23 @@ LOGGING = {
 }
 
 REST_FRAMEWORK = {
-    # 异常处理
-    'EXCEPTION_HANDLER': 'backend.utils.exceptions.custom_exception_handler',
+    # 自定义异常处理
+    'EXCEPTION_HANDLER': 'uric_api.utils.exceptions.custom_exception_handler',
+    # 自定义认证
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # jwt认证
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        # session认证
+        'rest_framework.authentication.SessionAuthentication',
+
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+JWT_AUTH = {
+    # jwt的有效时间
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=1),
+    'JWT_ALLOW_REFRESH': True,
 }
 
 # CORS组的配置信息

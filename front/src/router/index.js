@@ -10,7 +10,6 @@ const routes = [
             title: '自动化运维平台'
         },
         path: '/main',
-        alias: '/',
         name: 'main',
         component: Main,
         children: [
@@ -32,6 +31,7 @@ const routes = [
             title: '登录'
         },
         path: '/login',
+        alias: '/',
         name: 'login',
         component: Login
 
