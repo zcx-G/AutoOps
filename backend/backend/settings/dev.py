@@ -224,3 +224,5 @@ CORS_ORIGIN_WHITELIST = (
     'http://www.zcx321.cc',
 )
 CORS_ALLOW_CREDENTIALS = False  # 是否允许ajax跨域请求时携带cookie，False表示不用，我们后面也用不到cookie，所以关掉它就可以了，以防有人通过cookie来搞我们的网站
+
+
