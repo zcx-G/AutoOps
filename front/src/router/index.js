@@ -12,6 +12,7 @@ const routes = [
             requireAuth: true
         },
         path: '/main',
+        alias: '/',
         name: 'main',
         component: Main,
         children: [
@@ -42,7 +43,6 @@ const routes = [
             requireAuth: false
         },
         path: '/login',
-        alias: '/',
         name: 'login',
         component: Login
 
