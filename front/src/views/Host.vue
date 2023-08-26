@@ -13,8 +13,16 @@ import axios from "axios";
     name:"Host",
 
     mounted() {
-      axios.get("http://api.zcx321.cc:8888/host/get").then((res)=>{
+      axios.get(this.$settings.api_host+"/host",{
+        headers:{
+          "Content-Type":"application/json;charset=UTF-8",
+          "Authorization":"Bearer "+this.$store.getters.token
+        }
+      }).then((res)=>{
         console.log("res",res)
+      }).catch(err=>{
+        console.log("err",err)
+        this.$router.push("/login")
       })
     }
   }

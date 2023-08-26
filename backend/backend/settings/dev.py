@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+    # "rest_framework_simplejwt",
     'corsheaders',
     "home",
     "host",
@@ -201,22 +202,28 @@ LOGGING = {
 
 REST_FRAMEWORK = {
     # 自定义异常处理
-    'EXCEPTION_HANDLER': 'uric_api.utils.exceptions.custom_exception_handler',
+    'EXCEPTION_HANDLER': 'backend.utils.exceptions.custom_exception_handler',
     # 自定义认证
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        # jwt认证
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        # session认证
-        'rest_framework.authentication.SessionAuthentication',
-
-        'rest_framework.authentication.BasicAuthentication',
-    ),
+        # 'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication'
+    )
 }
 
-JWT_AUTH = {
-    # jwt的有效时间
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=1),
-    'JWT_ALLOW_REFRESH': True,
+SIMPLE_JWT = {
+    # 设置访问令牌的有效期为60分钟
+    'ACCESS_TOKEN_LIFETIME': datetime.timedelta(minutes=60),
+    # 设置滑动令牌刷新的有效期为1天
+    'SLIDING_TOKEN_REFRESH_LIFETIME': datetime.timedelta(days=1),
+    # 设置滑动令牌的有效期为1天
+    'SLIDING_TOKEN_LIFETIME': datetime.timedelta(days=1),
+    # 在滑动令牌刷新有效期结束前的2天内允许刷新令牌
+    'SLIDING_TOKEN_REFRESH_LIFETIME_GRACE_PERIOD': datetime.timedelta(days=2),
+    # 允许刷新令牌用于刷新访问令牌
+    'SLIDING_TOKEN_REFRESH_LIFETIME_ALLOW_FOR_REFRESH_TOKEN': True,
+    # 定义认证头部的类型为Bearer
+    'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
 # CORS组的配置信息
@@ -224,5 +231,3 @@ CORS_ORIGIN_WHITELIST = (
     'http://www.zcx321.cc',
 )
 CORS_ALLOW_CREDENTIALS = False  # 是否允许ajax跨域请求时携带cookie，False表示不用，我们后面也用不到cookie，所以关掉它就可以了，以防有人通过cookie来搞我们的网站
-
-

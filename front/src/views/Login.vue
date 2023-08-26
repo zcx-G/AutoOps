@@ -28,25 +28,59 @@
 </template>
 
 <script>
-export default {
-  name: 'Login',
-  data() {
-    return {
-      username: '',
-      password: '',
-      remember: true
+import axios, {request} from "axios"
+
+    export default {
+        name: 'Login',
+        data() {
+            return {
+                username: 'root',
+                password: '123456',
+                remember: true // 记录登陆状态
+            }
+        },
+      created() {
+            // 默认用户没有记录登陆状态
+            this.remember = this.$store.state.remember;
+        },
+        watch: { // 监听数据是否发生变化
+            remember() {
+                this.$store.commit('setRemember', this.remember);
+            }
+        },
+
+        methods: {
+            login() {
+                axios.post(`${this.$settings.api_host}/users/login/`, {
+                    username: this.username,
+                    password: this.password
+                }).then(response => {
+                   // vuex存储token
+                    this.$store.commit('setToken', response.data.access);
+                    // vuex存储用户信息
+                    console.log("user_info----",this.$store.getters.get_user_info)
+                    console.log(this.$store.getters.remember)
+                    console.log(this.$store.getters.token)
+                    let self = this;
+                    this.$success({
+                        title: 'Uric系统提示',
+                        content: '登陆成功！欢迎回来！',
+                        onOk() {
+                            // 在这里，不能直接使用this，因为此处的this被重新赋值了，不再是原来的外界的vue对象了，而是一个antd-vue提供的对话框对象了
+                            self.$router.push('/main')
+                        }
+                    })
+                }).catch((res) => {
+                    // 登陆失败！
+                    this.$message.error('用户名或者密码有误，请重新输入！');
+                })
+            }
+
+        }
+
     }
-  },
-
-  methods: {
-    login() {
-
-    }
-
-  }
-
-}
 </script>
+
 
 <style scoped>
 .login .hi{

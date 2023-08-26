@@ -56,6 +56,10 @@ export default defineComponent({
     UserOutlined
   },
 
+  created(){
+    console.log("user_info----",this.$store.getters.get_user_info)
+  },
+
   data() {
     return {
       collapsed: ref(false),
