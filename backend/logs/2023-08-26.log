@@ -1,0 +1,303 @@
+INFO 2023-08-26 14:17:53,944 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-26 14:18:10,831 exception:124 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2023-08-26 14:18:10,890 log:241 Bad Request: /
+WARNING 2023-08-26 14:18:10,894 basehttp:212 "GET / HTTP/1.1" 400 76948
+ERROR 2023-08-26 14:18:11,105 exception:124 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2023-08-26 14:18:11,120 log:241 Bad Request: /favicon.ico
+WARNING 2023-08-26 14:18:11,121 basehttp:212 "GET /favicon.ico HTTP/1.1" 400 76873
+INFO 2023-08-26 14:31:50,235 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-26 14:52:34,656 basehttp:212 "POST //users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:53:36,732 basehttp:212 "OPTIONS /users/login/ HTTP/1.1" 200 0
+WARNING 2023-08-26 14:53:36,879 log:241 Unauthorized: /users/login/
+WARNING 2023-08-26 14:53:36,880 basehttp:212 "POST /users/login/ HTTP/1.1" 401 55
+INFO 2023-08-26 14:53:45,805 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:54:53,064 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:54:59,522 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:55:12,489 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:55:32,359 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:55:45,729 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:55:53,797 basehttp:212 "POST //users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:56:03,199 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:56:19,635 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+WARNING 2023-08-26 14:56:26,814 log:241 Unauthorized: /users/login/
+WARNING 2023-08-26 14:56:26,815 basehttp:212 "POST /users/login/ HTTP/1.1" 401 55
+INFO 2023-08-26 14:56:32,200 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:56:59,659 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:57:25,728 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:57:34,272 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:58:19,959 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+WARNING 2023-08-26 14:58:30,648 log:241 Unauthorized: /users/login/
+WARNING 2023-08-26 14:58:30,649 basehttp:212 "POST /users/login/ HTTP/1.1" 401 55
+INFO 2023-08-26 14:58:32,824 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:59:14,552 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 14:59:22,308 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:00:33,016 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+WARNING 2023-08-26 15:01:03,713 log:241 Unauthorized: /users/login/
+WARNING 2023-08-26 15:01:03,714 basehttp:212 "POST /users/login/ HTTP/1.1" 401 55
+INFO 2023-08-26 15:01:06,014 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:02:45,363 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:02:49,621 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:03:23,753 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:04:48,724 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:05:15,665 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:06:31,774 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:06:36,823 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:06:40,225 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:15:25,248 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:16:05,018 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:17:00,985 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:17:19,238 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:20:26,674 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:20:39,367 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:21:40,631 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:22:35,201 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:23:09,908 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:23:49,180 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:24:56,851 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:25:24,264 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:27:11,969 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:27:47,590 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:27:51,322 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:28:19,062 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:29:10,382 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:29:56,269 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:30:23,988 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:38:57,078 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 15:40:12,521 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+WARNING 2023-08-26 15:40:30,934 log:241 Not Found: /host/get
+WARNING 2023-08-26 15:40:30,935 basehttp:212 "GET /host/get HTTP/1.1" 404 2363
+INFO 2023-08-26 18:08:04,299 basehttp:212 "GET //host HTTP/1.1" 301 0
+WARNING 2023-08-26 18:08:04,303 log:241 Unauthorized: /host/
+WARNING 2023-08-26 18:08:04,303 basehttp:212 "GET /host/ HTTP/1.1" 401 43
+INFO 2023-08-26 18:08:37,311 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-26 18:08:37,686 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-26 18:08:41,136 basehttp:212 "GET //host HTTP/1.1" 301 0
+ERROR 2023-08-26 18:08:41,175 log:241 Internal Server Error: /host/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 394, in initialize_request
+    authenticators=self.get_authenticators(),
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 272, in get_authenticators
+    return [auth() for auth in self.authentication_classes]
+TypeError: 'type' object is not iterable
+ERROR 2023-08-26 18:08:41,176 basehttp:212 "GET /host/ HTTP/1.1" 500 87370
+INFO 2023-08-26 18:09:51,370 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-26 18:09:51,752 autoreload:668 Watching for file changes with StatReloader
+WARNING 2023-08-26 18:09:58,068 log:241 Not Found: /host/
+WARNING 2023-08-26 18:09:58,069 basehttp:212 "GET //host/ HTTP/1.1" 404 2355
+INFO 2023-08-26 18:10:16,279 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\urls.py changed, reloading.
+INFO 2023-08-26 18:10:16,633 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-26 18:10:19,699 log:241 Internal Server Error: /host/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 394, in initialize_request
+    authenticators=self.get_authenticators(),
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 272, in get_authenticators
+    return [auth() for auth in self.authentication_classes]
+TypeError: 'type' object is not iterable
+ERROR 2023-08-26 18:10:19,702 basehttp:212 "GET //host/ HTTP/1.1" 500 87217
+INFO 2023-08-26 18:11:48,692 basehttp:212 "GET //host HTTP/1.1" 301 0
+ERROR 2023-08-26 18:11:48,709 log:241 Internal Server Error: /host/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 394, in initialize_request
+    authenticators=self.get_authenticators(),
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 272, in get_authenticators
+    return [auth() for auth in self.authentication_classes]
+TypeError: 'type' object is not iterable
+ERROR 2023-08-26 18:11:48,710 basehttp:212 "GET /host/ HTTP/1.1" 500 87370
+INFO 2023-08-26 18:11:54,667 basehttp:212 "GET //host HTTP/1.1" 301 0
+ERROR 2023-08-26 18:11:54,682 log:241 Internal Server Error: /host/
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 394, in initialize_request
+    authenticators=self.get_authenticators(),
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 272, in get_authenticators
+    return [auth() for auth in self.authentication_classes]
+TypeError: 'type' object is not iterable
+ERROR 2023-08-26 18:11:54,683 basehttp:212 "GET /host/ HTTP/1.1" 500 87370
+INFO 2023-08-26 18:12:41,531 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\urls.py changed, reloading.
+INFO 2023-08-26 18:12:41,906 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-26 18:12:48,367 log:241 Internal Server Error: /host/get
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 394, in initialize_request
+    authenticators=self.get_authenticators(),
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 272, in get_authenticators
+    return [auth() for auth in self.authentication_classes]
+TypeError: 'type' object is not iterable
+ERROR 2023-08-26 18:12:48,370 basehttp:212 "GET //host/get HTTP/1.1" 500 87256
+WARNING 2023-08-26 18:12:55,089 log:241 Not Found: /host/get/
+WARNING 2023-08-26 18:12:55,090 basehttp:212 "GET //host/get/ HTTP/1.1" 404 2369
+ERROR 2023-08-26 18:13:10,400 log:241 Internal Server Error: /host/get
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 394, in initialize_request
+    authenticators=self.get_authenticators(),
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 272, in get_authenticators
+    return [auth() for auth in self.authentication_classes]
+TypeError: 'type' object is not iterable
+ERROR 2023-08-26 18:13:10,402 basehttp:212 "GET //host/get HTTP/1.1" 500 87256
+INFO 2023-08-26 18:22:57,283 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-26 18:23:03,681 basehttp:212 "GET //host/get HTTP/1.1" 200 19
+INFO 2023-08-26 18:23:15,490 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-26 18:23:15,831 autoreload:668 Watching for file changes with StatReloader
+ERROR 2023-08-26 18:23:20,936 log:241 Internal Server Error: /host/get
+Traceback (most recent call last):
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 394, in initialize_request
+    authenticators=self.get_authenticators(),
+  File "R:\zcx\PyCode\AutoOps\venv\lib\site-packages\rest_framework\views.py", line 272, in get_authenticators
+    return [auth() for auth in self.authentication_classes]
+TypeError: 'type' object is not iterable
+ERROR 2023-08-26 18:23:20,938 basehttp:212 "GET //host/get HTTP/1.1" 500 87178
+INFO 2023-08-26 18:23:43,453 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\views.py changed, reloading.
+INFO 2023-08-26 18:23:43,798 autoreload:668 Watching for file changes with StatReloader
+WARNING 2023-08-26 18:23:46,696 log:241 Unauthorized: /host/get
+WARNING 2023-08-26 18:23:46,697 basehttp:212 "GET //host/get HTTP/1.1" 401 43
+INFO 2023-08-26 18:24:07,228 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\apps\host\urls.py changed, reloading.
+INFO 2023-08-26 18:24:07,549 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-26 18:24:10,393 basehttp:212 "GET //host HTTP/1.1" 301 0
+WARNING 2023-08-26 18:24:10,396 log:241 Unauthorized: /host/
+WARNING 2023-08-26 18:24:10,397 basehttp:212 "GET /host/ HTTP/1.1" 401 43
+INFO 2023-08-26 18:24:51,153 basehttp:212 "GET /host HTTP/1.1" 301 0
+WARNING 2023-08-26 18:24:51,164 log:241 Unauthorized: /host/
+WARNING 2023-08-26 18:24:51,165 basehttp:212 "GET /host/ HTTP/1.1" 401 43
+WARNING 2023-08-26 18:25:59,599 log:241 Unauthorized: /host/
+WARNING 2023-08-26 18:25:59,600 basehttp:212 "GET /host/ HTTP/1.1" 401 43
+WARNING 2023-08-26 18:32:01,606 log:241 Unauthorized: /host/
+WARNING 2023-08-26 18:32:01,607 basehttp:212 "GET /host/ HTTP/1.1" 401 43
+INFO 2023-08-26 20:21:59,447 basehttp:212 "POST //users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 20:22:33,955 basehttp:212 "GET //host HTTP/1.1" 301 0
+WARNING 2023-08-26 20:22:33,958 log:241 Unauthorized: /host/
+WARNING 2023-08-26 20:22:33,958 basehttp:212 "GET /host/ HTTP/1.1" 401 43
+INFO 2023-08-26 20:23:32,309 basehttp:212 "GET //host HTTP/1.1" 301 0
+INFO 2023-08-26 20:23:32,321 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 20:29:41,693 basehttp:212 "OPTIONS /host HTTP/1.1" 200 0
+INFO 2023-08-26 20:29:41,743 basehttp:212 "OPTIONS /host/ HTTP/1.1" 200 0
+WARNING 2023-08-26 20:29:41,746 log:241 Unauthorized: /host/
+WARNING 2023-08-26 20:29:41,746 basehttp:212 "GET /host/ HTTP/1.1" 401 183
+WARNING 2023-08-26 20:29:46,749 log:241 Unauthorized: /host/
+WARNING 2023-08-26 20:29:46,750 basehttp:212 "GET /host/ HTTP/1.1" 401 183
+INFO 2023-08-26 20:31:01,346 basehttp:212 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2023-08-26 20:31:01,489 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 20:31:05,236 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+WARNING 2023-08-26 21:33:21,624 log:241 Unauthorized: /host/
+WARNING 2023-08-26 21:33:21,625 basehttp:212 "GET /host/ HTTP/1.1" 401 183
+WARNING 2023-08-26 21:36:56,788 log:241 Unauthorized: /host/
+WARNING 2023-08-26 21:36:56,788 basehttp:212 "GET /host/ HTTP/1.1" 401 183
+INFO 2023-08-26 21:37:08,385 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 21:37:12,065 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:37:50,519 basehttp:212 "POST //users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 21:37:56,846 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:40:06,871 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-26 21:40:07,200 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-26 21:40:13,077 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:40:17,526 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:40:20,128 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:40:22,839 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:40:23,948 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:40:24,402 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:40:34,211 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 21:41:10,984 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:41:21,610 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+WARNING 2023-08-26 21:41:39,631 log:241 Unauthorized: /host/
+WARNING 2023-08-26 21:41:39,632 basehttp:212 "GET /host/ HTTP/1.1" 401 183
+INFO 2023-08-26 21:42:17,539 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\settings\dev.py changed, reloading.
+INFO 2023-08-26 21:42:17,873 autoreload:668 Watching for file changes with StatReloader
+INFO 2023-08-26 21:52:44,237 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 21:52:48,179 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:55:50,616 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 21:57:41,589 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 22:08:44,674 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 22:09:11,698 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 22:11:05,099 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 22:14:12,242 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 22:14:14,456 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 22:14:24,958 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 22:14:27,771 basehttp:212 "POST /users/login/ HTTP/1.1" 200 483
+INFO 2023-08-26 22:14:29,703 basehttp:212 "GET /host/ HTTP/1.1" 200 19
+INFO 2023-08-26 22:16:06,561 autoreload:266 R:\zcx\PyCode\AutoOps\backend\backend\urls.py changed, reloading.
